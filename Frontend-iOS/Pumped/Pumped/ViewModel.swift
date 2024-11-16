@@ -21,7 +21,7 @@ class ViewModel: ObservableObject {
         guard web3Auth == nil else { return }
         await MainActor.run(body: {
             isLoading = true
-            navigationTitle = "Loading"
+//            navigationTitle = "Loading"
         })
         
         do {
@@ -39,7 +39,7 @@ class ViewModel: ObservableObject {
                 loggedIn = true
             }
             isLoading = false
-            navigationTitle = loggedIn ? "UserInfo" : "SignIn"
+//            navigationTitle = loggedIn ? "UserInfo" : "SignIn"
         })
     }
     
@@ -76,7 +76,7 @@ class ViewModel: ObservableObject {
                 await MainActor.run(body: {
                     user = result
                     loggedIn = true
-                    navigationTitle = "UserInfo"
+//                    navigationTitle = "UserInfo"
                 })
                 
             } catch {

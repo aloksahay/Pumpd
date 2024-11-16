@@ -1,0 +1,18 @@
+{
+  "heartRates": [
+    {
+      "timestamp": "2024-03-14T12:34:56Z",
+      "bpm": 75
+    },
+    {
+      "timestamp": "2024-03-14T12:34:57Z",
+      "bpm": 72
+    },
+    {
+      "timestamp": "2024-03-14T12:34:58Z",
+      "bpm": 78
+    }
+  ],
+  "deviceId": "test-device",
+  "timestamp": "2024-03-14T12:35:00Z"
+}
