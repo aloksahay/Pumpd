@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-@main
 struct PumpedApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: ViewModel())
         }
     }
 }
+
