@@ -16,7 +16,7 @@ class ViewModel: ObservableObject {
     @Published var navigationTitle: String = ""
     private var clientId = "BPdWoOWu8Nk743CSr1vaqcY0edE0Rh2VJtDX9b8CT_0FQZyNpMILG2ZUP1cTo4Vw9By51iTdzOUV945Mb6q6fdg"
     // IMP START - Whitelist bundle ID
-    private var network: Network = .sapphire_mainnet
+    private var network: Network = .sapphire_devnet
     func setup() async {
         guard web3Auth == nil else { return }
         await MainActor.run(body: {
@@ -31,7 +31,7 @@ class ViewModel: ObservableObject {
                 redirectUrl: "com.alok.Pumped://auth"
             ))
         } catch {
-            print("Something went wrong")
+            print(error.localizedDescription)
         }
         await MainActor.run(body: {
             if self.web3Auth?.state != nil {
@@ -39,7 +39,7 @@ class ViewModel: ObservableObject {
                 loggedIn = true
             }
             isLoading = false
-//            navigationTitle = loggedIn ? "UserInfo" : "SignIn"
+            navigationTitle = loggedIn ? "UserInfo" : "SignIn"
         })
     }
     
