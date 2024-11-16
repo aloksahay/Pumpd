@@ -1,0 +1,42 @@
+{
+  "user_id": "football_fan_123",
+  "device_type": "apple_watch",
+  "session_type": "football_match",
+  "readings": [
+    {
+      "timestamp": "2024-03-17T15:00:00Z",
+      "bpm": 72,
+      "activity": "pre_match",
+      "confidence": 0.98,
+      "location": "stadium_entrance"
+    },
+    {
+      "timestamp": "2024-03-17T15:15:00Z",
+      "bpm": 85,
+      "activity": "kickoff",
+      "confidence": 0.99,
+      "location": "seat_block_A"
+    },
+    {
+      "timestamp": "2024-03-17T15:30:00Z",
+      "bpm": 110,
+      "activity": "goal_celebration",
+      "confidence": 0.97,
+      "location": "seat_block_A"
+    },
+    {
+      "timestamp": "2024-03-17T15:45:00Z",
+      "bpm": 95,
+      "activity": "watching",
+      "confidence": 0.98,
+      "location": "seat_block_A"
+    }
+  ],
+  "metadata": {
+    "data_version": "1.0",
+    "sampling_rate": "15m",
+    "device_firmware": "watchOS_10.2",
+    "venue": "stadium_name",
+    "match_id": "2024_03_17_home_vs_away"
+  }
+}
